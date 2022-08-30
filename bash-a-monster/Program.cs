@@ -1,12 +1,14 @@
-﻿Player thePlayer  = new Player();
-Enemy theEnemy = new Enemy();
+﻿Meatballs meatballs  = new Meatballs();
+Ramen ramen = new Ramen();
 
-Console.WriteLine($"{thePlayer.name} has {thePlayer.health} health points");
-Console.WriteLine($"{theEnemy.name} has {theEnemy.health} health points");
+Console.WriteLine($"{meatballs.name} has {meatballs.protein} as protien and {meatballs.carbohydrates} as carbohydrates");
+Console.WriteLine($"{ramen.name} has {ramen.protein} as protien and {ramen.carbohydrates} as carbohydrates");
 
-Console.WriteLine("Attack!!!");
-theEnemy.health -= 10;
+Console.WriteLine("What grade do you give Meatballs?");
+meatballs.grade = Console.ReadLine();
 
-Console.WriteLine($"{theEnemy.name} now has {theEnemy.health} health points");
+Console.WriteLine("What grade do you give Ramen?");
+ramen.grade = Console.ReadLine();
+
 
 Console.ReadLine();
