@@ -10,5 +10,12 @@ meatballs.grade = Console.ReadLine();
 Console.WriteLine("What grade do you give Ramen?");
 ramen.grade = Console.ReadLine();
 
+Console.WriteLine($"{meatballs.name} gets grade {meatballs.grade}");
+Console.WriteLine($"{ramen.name} gets grade {ramen.grade}");
+
+if(ramen.grade == meatballs.grade)
+{
+    Console.WriteLine("It's a tie");
+}
 
 Console.ReadLine();
